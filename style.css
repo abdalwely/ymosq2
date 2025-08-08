@@ -97,7 +97,7 @@ body {
 
 .stat .number {
   font-size: 28px;
-  color: #4b8f28;
+  color: #809b30;
   font-weight: 700;
   margin-bottom: 5px;
   line-height: 1;
@@ -141,14 +141,14 @@ body {
 }
 /* العنوان الرئيسي (مثلاً: أعمال المباني) */
 .progress-section h2 {
-  color: #2c88a8; /* أزرق معتدل */
+  color: #75b1a9; /* أزرق معتدل */
   font-weight: bold;
   font-size: 1.8rem;
 }
 
 /* الوصف أو العنوان الفرعي (مثلاً: المرحلة الحالية) */
 .progress-section p {
-  color: #1f963d; /* ذهبي فاتح */
+  color: #809b30; /* ذهبي فاتح */
   font-size: 1rem;
   margin-top: 4px;
   text-align: center; /* ✅ توسيط النص */
@@ -168,7 +168,7 @@ body {
 
 .gauge-fill {
   fill: none;
-  stroke: #7abf3d;
+  stroke: #809b30;
   stroke-width: 10; /* أرفع من الخلفية */
   stroke-dasharray: 126; /* محيط القوس */
   stroke-dashoffset: 0; /* يتم التحك�� فيه من الجافاسكربت */
@@ -184,7 +184,7 @@ body {
 .countdown {
   font-size: 18px;
   font-weight: bold;
-  color: #4b8f28;
+  color: #809b30;
   direction: ltr;
   text-align: center;
 }
@@ -193,7 +193,7 @@ body {
   gap: 5px;
   justify-content: center;
   font-weight: 400;
-  color: #7abf3d;
+  color: #809b30;
   font-size: 1.6rem;
   user-select: text;
   direction: ltr;
@@ -208,18 +208,18 @@ body {
   font-weight: 700;
   font-size: 2.0rem;
   line-height: 1;
-  color: #7abf3d;
+  color: #809b30;
 }
 .countdown-label {
   font-weight: 400;
   font-size: 0.8rem;
-  color: #7abf3d;
+  color: #809b30;
 }
 
 .countdown-separator {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #7abf3d;
+  color: #809b30;
   margin: 0 8px;
   align-self: center;
 }
@@ -322,31 +322,21 @@ body {
 
 /* حالات العناصر */
 .timeline-item.completed {
-  background: #7cb342;
+  background: #819b36;
   color: white;
   font-weight: 700;
   text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 .timeline-item.current {
-  background: #8bc34a;
+  background: #75b1a9;
   color: white;
   font-weight: 700;
   text-shadow: 0 1px 2px rgba(0,0,0,0.3);
   position: relative;
 }
 
-.timeline-item.current::after {
-  content: "يحدث الآن";
-  position: absolute;
-  bottom: -18px;
-  left: 50%;
-  transform: translateX(50%);
-  font-size: 10px;
-  color: #7cb342;
-  font-weight: 600;
-  white-space: nowrap;
-}
+
 
 .timeline-item.pending {
   background: #e0e0e0;
