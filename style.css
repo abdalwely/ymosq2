@@ -1,0 +1,360 @@
+body {
+  font-family: 'Cairo', sans-serif;
+}
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #333;
+  direction: rtl;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 5px 0;
+}
+
+.logo, .qr {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.main-title {
+  font-size: 18px;
+  color: #4b8f28;
+  text-align: center;
+  flex: 1;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+/* Sponsors */
+.sponsors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 8px 0;
+  padding: 0 5px;
+}
+
+.sponsor {
+  text-align: center;
+  font-size: 10px;
+  color: #4b8f28;
+  flex: 1;
+  max-width: 18%;
+}
+
+.sponsor img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 3px;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.stat .number {
+  font-size: 24px;
+  color: #4b8f28;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.stat .label {
+  font-size: 11px;
+  color: #666;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Images */
+.images {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.images img {
+  width: 48%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Progress - Gauge + Countdown */
+.progress-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  gap: 15px;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 12px;
+}
+/* العنوان الرئيسي (مثلاً: أعمال المباني) */
+.progress-section h2 {
+  color: #2c88a8; /* أزرق معتدل */
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+/* الوصف أو العنوان الفرعي (مثلاً: المرحلة الحالية) */
+.progress-section p {
+  color: #1f963d; /* ذهبي فاتح */
+  font-size: 1rem;
+  margin-top: 4px;
+  text-align: center; /* ✅ توسيط النص */
+  width: 100%;
+}
+
+.gauge {
+  width: 200px;
+  height: 100px;
+}
+
+.gauge-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 12; /* الخلفية */
+}
+
+.gauge-fill {
+  fill: none;
+  stroke: #7abf3d;
+  stroke-width: 10; /* أرفع من الخلفية */
+  stroke-dasharray: 126; /* محيط القوس */
+  stroke-dashoffset: 0; /* يتم التحكم فيه من الجافاسكربت */
+  transition: stroke-dashoffset 1s;
+}
+
+.gauge-text {
+  font-size: 14px;
+  fill: #333;
+  font-weight: bold;
+}
+
+.countdown {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4b8f28;
+  direction: ltr;
+  text-align: center;
+}
+.countdown-container {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  font-weight: 400;
+  color: #7abf3d;
+  font-size: 1.6rem;
+  user-select: text;
+  direction: ltr;
+}
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 50px;
+}
+.countdown-number {
+  font-weight: 700;
+  font-size: 2.0rem;
+  line-height: 1;
+  color: #7abf3d;
+}
+.countdown-label {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #7abf3d;
+}
+
+.countdown-separator {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #7abf3d;
+  margin: 0 8px;
+  align-self: center;
+}
+/* فيديو العرض */
+.black-screen {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 0;
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.black-screen iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  min-height: 300px;
+  min-width: 300px;
+}
+
+/* Timeline Strips - مطابق للصورة تماماً */
+.timeline-container {
+  margin: 20px auto;
+  max-width: 95%;
+}
+
+.timeline-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  position: relative;
+  height: 60px;
+  width: 100%;
+  max-width: 800px;
+  direction: rtl;
+}
+
+.timeline-pill {
+  display: flex;
+  align-items: stretch;
+  height: 50px;
+  border: 3px solid #2c3e50;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  width: 100%;
+}
+
+.timeline-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  padding: 8px 6px;
+  position: relative;
+  border-left: 2px solid #2c3e50;
+  color: #2c3e50;
+  line-height: 1.1;
+  min-width: 0;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.timeline-item:first-child {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-left: none;
+}
+
+.timeline-item:last-child {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+/* حالات العناصر */
+.timeline-item.completed {
+  background: #7cb342;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.timeline-item.current {
+  background: #8bc34a;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.timeline-item.current::after {
+  content: "يحدث الآن";
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(50%);
+  font-size: 10px;
+  color: #7cb342;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.timeline-item.pending {
+  background: #e0e0e0;
+  color: #666;
+  font-weight: 500;
+}
+
+/* التسمية أسفل الشريط */
+.timeline-label {
+  text-align: center;
+  font-size: 12px;
+  color: #7cb342;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+/* التجاوب */
+@media (max-width: 768px) {
+  .timeline-pill {
+    height: 45px;
+  }
+  .timeline-item {
+    font-size: 9px;
+    padding: 6px 4px;
+  }
+  .timeline-label {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-pill {
+    height: 40px;
+  }
+  .timeline-item {
+    font-size: 8px;
+    padding: 4px 2px;
+  }
+}
+.gauge-label {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c88a8; /* لون أزرق سماوي */
+  margin-bottom: 8px;
+}

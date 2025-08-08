@@ -1,0 +1,48 @@
+/* Placeholder styles for missing images */
+.logo {
+  background: #4b8f28;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.logo::before {
+  content: "LOGO";
+  font-size: 12px;
+}
+
+.qr {
+  background: #e0e0e0;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr::before {
+  content: "QR";
+  font-size: 12px;
+  color: #666;
+}
+
+.sponsor img {
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.images img {
+  background: #f5f5f5;
+  border: 2px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images img::before {
+  content: "صورة المسجد";
+  color: #666;
+  font-size: 14px;
+}

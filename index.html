@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مشروع بناء مسجد حي الضباب - الدمام</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="images/placeholder.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+      <h1 class="main-title">مشروع بناء مسجد بحي الضباب بمدينة الدمام</h1>
+      <img src="images/gr.jpg" class="qr" alt="QR Code" />
+    </header>
+
+    <!-- Sponsors -->
+    <section class="sponsors">
+      <div class="sponsor"><img src="images/1.jpg" alt=""><span>إدارة</span></div>
+      <div class="sponsor"><img src="images/20250715_194024.jpg" alt=""><span>المقاول</span></div>
+      <div class="sponsor"><img src="images/20250715_194045.jpg" alt=""><span>المكتب الهندسي</span></div>
+      <div class="sponsor"><img src="images/20250715_193959.jpg" alt=""><span>بالتعاون</span></div>
+      <div class="sponsor"><img src="images/20250715_193930.jpg" alt=""><span>بدعم</span></div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="stat"><div class="number">1,361</div><div class="label">إجمالي مساحة المسجد</div></div>
+      <div class="stat"><div class="number">480</div><div class="label">إجمالي عدد المصلين</div></div>
+      <div class="stat"><div class="number">14</div><div class="label">شهر<br>مدة المشروع</div></div>
+    </section>
+
+    <!-- Images -->
+    <section class="images">
+      <img src="images/mosque1.jpg" alt="داخلي" />
+      <img src="images/mosque2.jpg" alt="خارجي" />
+    </section>
+
+    <!-- Video -->
+    <div class="black-screen">
+      <iframe src="https://yaamur-get.github.io/thbat/" allowfullscreen></iframe>
+    </div>
+
+    <!-- Progress Gauge -->
+    <section class="progress-section">
+      <div class="gauge">
+        <div class="gauge-label">نسبة الإنجاز</div>
+        <svg viewBox="0 0 100 50">
+          <!-- الخلفية -->
+          <path d="M10,50 A40,40 0 0,1 90,50" class="gauge-bg" />
+          <!-- القوس الأخضر -->
+          <path id="gauge-fill" d="M10,50 A40,40 0 0,1 90,50" class="gauge-fill" />
+          <!-- النص -->
+          <text id="gauge-text" x="50" y="45" text-anchor="middle" class="gauge-text">35.00 %</text>
+        </svg>
+      </div>
+      
+      <div class="stage-info" >
+        <h2>أعمال المباني</h2>
+        <p>المرحلة الحالية</p>
+      </div>
+      <div class="countdown-container" aria-live="polite" aria-atomic="true">
+        <div class="countdown-item" aria-label="عدد الأيام المتبقية">
+          <div class="countdown-number" id="days">0</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-item" aria-label="عدد الساعات المتبقية">
+          <div class="countdown-number" id="hours">0</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-item" aria-label="عدد الدقائق المتبقية">
+          <div class="countdown-number" id="minutes">0</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-item" aria-label="عدد الثواني المتبقية">
+          <div class="countdown-number" id="seconds">0</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Strip 1 -->
+    <div class="timeline-container">
+      <div class="timeline-strip">
+        <div class="timeline-pill">
+          <div class="timeline-item completed">مراجعة المخططات</div>
+          <div class="timeline-item completed">طلب عروض سعر</div>
+          <div class="timeline-item completed">ترسية المشروع</div>
+          <div class="timeline-item completed">أعمال التشطيب</div>
+          <div class="timeline-item completed">أعمال المباني</div>
+          <div class="timeline-item completed">الحصول على تأمين</div>
+          <div class="timeline-item completed">التعاقد مع مقاول</div>
+          <div class="timeline-item current">التعاقد مع مكتب هندسي</div>
+          <div class="timeline-item pending">توصيل الخدمات</div>
+          <div class="timeline-item pending">أعمال التثبيت</div>
+          <div class="timeline-item pending">الفحص والتسليم</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline Strip 2 -->
+    <div class="timeline-container">
+      <div class="timeline-strip">
+        <div class="timeline-pill">
+          <div class="timeline-item completed">الخرسانة المسلحة</div>
+          <div class="timeline-item completed">أعمال السقف</div>
+          <div class="timeline-item completed">أعمال الأعمدة</div>
+          <div class="timeline-item completed">أعمال الأعمدة</div>
+          <div class="timeline-item completed">صبة بطانة الأرضية</div>
+          <div class="timeline-item completed">ردم الميدات</div>
+          <div class="timeline-item completed">عزل الميدات</div>
+          <div class="timeline-item completed">أعمال الردم</div>
+          <div class="timeline-item pending">أعمال المباني</div>
+          <div class="timeline-item pending">التواعد والأساسات</div>
+          <div class="timeline-item pending">أعمدة الدور الأول</div>
+        </div>
+      </div>
+      <div class="timeline-label">أعمال العظم</div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
