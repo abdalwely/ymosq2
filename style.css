@@ -291,14 +291,12 @@ body {
   min-width: 0;
   word-wrap: break-word;
   hyphens: auto;
-  transition: all 0.3s ease;
-  cursor: pointer;
 }
 
 .timeline-item:after {
   content: '';
   position: absolute;
-  right: -1px;
+  right: 0;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -319,7 +317,7 @@ body {
 }
 
 .timeline-item:last-child:after {
-  display: none;
+  right: -2px;
 }
 
 /* حالات العناصر */
@@ -338,7 +336,7 @@ body {
   position: relative;
 }
 
-.timeline-item.current::before {
+.timeline-item.current::after {
   content: "يحدث الآن";
   position: absolute;
   bottom: -18px;
@@ -364,43 +362,6 @@ body {
   font-weight: 600;
   margin-top: 8px;
   margin-bottom: 5px;
-}
-
-/* Hover Effects with Wave Animation */
-.timeline-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  animation: wave 0.6s ease-in-out;
-}
-
-.timeline-item.completed:hover {
-  background: linear-gradient(45deg, #7cb342, #8bc34a, #7cb342);
-  background-size: 200% 200%;
-  animation: wave 0.6s ease-in-out, gradientShift 1.5s ease-in-out infinite;
-}
-
-.timeline-item.current:hover {
-  background: linear-gradient(45deg, #8bc34a, #9ccc65, #8bc34a);
-  background-size: 200% 200%;
-  animation: wave 0.6s ease-in-out, gradientShift 1.5s ease-in-out infinite;
-}
-
-.timeline-item.pending:hover {
-  background: linear-gradient(45deg, #e0e0e0, #f0f0f0, #e0e0e0);
-  background-size: 200% 200%;
-  animation: wave 0.6s ease-in-out, gradientShift 1.5s ease-in-out infinite;
-}
-
-@keyframes wave {
-  0% { transform: scale(1) translateY(0); }
-  50% { transform: scale(1.05) translateY(-2px); }
-  100% { transform: scale(1.05) translateY(0); }
-}
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
 
 /* التجاوب */
